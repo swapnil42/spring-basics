@@ -72,7 +72,7 @@ public class Line {
                 '}';
     }
 
-    public static Point yIntercept(Line line) {
-        return new Point(0, line.getY2() - (Line.slope(line) * line.getX2()));
+    public static double yIntercept(Line line) {
+        return line.getY2() - (Line.slope(line) * line.getX2());
     }
 }

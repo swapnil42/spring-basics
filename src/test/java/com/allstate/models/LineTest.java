@@ -25,7 +25,7 @@ public class LineTest {
     @Test
     public void testYIntercept() {
         Line line = new Line(0,3,0,4);
-        assertEquals(0, Line.yIntercept(line).getY(), 0.1);
+        assertEquals(0, Line.yIntercept(line), 0.1);
     }
 
 }
